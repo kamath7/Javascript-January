@@ -1,0 +1,18 @@
+Most recurring attacks
+a) Injection attacks
+b) Broken authentication
+c) Sensitive data exposure
+d) XML Entities
+
+Open Web Application Security Program (OWASP) 
+URL - https://owasp.org
+
+JWT
+
+Open standard
+JSON Object - Payload, Signature, Header
+Header - Type of token, Hashing algo used
+Payload - Metdata from the request party. 
+Signature - Sign that suggests who the user is
+
+URL - https://jwt.io
