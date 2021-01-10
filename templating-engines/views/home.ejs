@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+ 
+
+    <title>Forex Kams</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./home">Forexo</a>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <div class="container">
+         <form name="form1" method="POST" action="/currency/getExchange" >
+             <label class="form-label">Set the base currency: </label><br/><br/>
+            <select class="form-select"  name="baseCurrency" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <% for(var i =0 ; i < currencies.length; i++){ %>
+                    <option  value=<%= currencies[i] %>> <%= currencies[i] %> </option>
+                    <% } %>
+              </select><br/>
+              <label class="form-label">Enter amount </label><br/><br/>
+
+              <input class="form-control" name="amount" type="text" placeholder="Default input" aria-label="default input example" >
+              <label class="form-label">Currency you want: </label><br/><br/>
+              <select class="form-select" name="toCurrency" aria-label="Default select example" >
+                  <option selected>Open this select menu</option>
+                  <% for(var i =0 ; i < currencies.length; i++){ %>
+                      <option value=<%= currencies[i] %>> <%= currencies[i] %> </option>
+                      <% } %>
+                </select><br/>
+                <input type="submit" class="btn btn-primary form-control"> 
+            </form> 
+            <p><%= amount%></p>
+      </div>
+    </div>
+  </body>
+</html>
