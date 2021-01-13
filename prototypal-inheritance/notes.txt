@@ -9,3 +9,5 @@ Prototypal Inheritance - Flexible, extensible, easy to understand.
 Prototype - All objects have a prototype property. It is simply a reference to another object (proto). Object look at the prototype chain for the method if it doesn't exist. 
 It looks for a sequence of objects connected via the prototype chain. It's hiddenn from where the method is in the prototype chain.
 
+Reference 
+https://www.learnhowtoprogram.com/react/functional-programming-with-javascript/the-problems-of-classical-inheritance
