@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calc</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kamsculator</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Imbue:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="calculator-grid">
       <div class="output">
-        <div data-previous-operand class="previous-operand">69+</div>
-        <div data-current-operand class="current-operand">69</div>
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
       </div>
       <button data-all-clear class="span-two">AC</button>
       <button data-delete>DEL</button>
@@ -33,7 +34,7 @@
       <button data-number>8</button>
       <button data-number>9</button>
       <button data-operation>-</button>
-      <button data-operation>.</button>
+      <button data-number>.</button>
       <button data-number>0</button>
       <button data-equals class="span-two">=</button>
     </div>
