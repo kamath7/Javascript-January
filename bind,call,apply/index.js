@@ -21,7 +21,7 @@ console.log(getDetails.apply(kams,['How are you?','Thank you for joining!'])) //
 
 //bind
 
-//call and apply does not invoke the function. It binds the this to object arguement
+//call and apply  invoke the function. It binds the this to object arguement
 
 let cheti = {name:'Chesthan',age: 45};
 function spellMyName(greeting){
